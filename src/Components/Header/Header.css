@@ -1,0 +1,12 @@
+header {
+    background-color: rgba(0, 143, 12, 1);
+    text-align: center;
+}
+header h1 {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 25px 0px;
+    text-transform: uppercase;
+}
