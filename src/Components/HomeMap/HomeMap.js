@@ -4,6 +4,8 @@ import axios from 'axios';
 import { connect } from 'react-redux'
 import { ClipLoader } from 'react-spinners';
 
+const MAPS_KEY = `${process.env.REACT_APP_MAPS_KEY}`;
+
 class TestMap extends Component {
 
     state = {
@@ -58,7 +60,7 @@ class TestMap extends Component {
                             <WrappedMap
                             defaultLat={this.state.defaultLat}
                             defaultLong={this.state.defaultLong}
-                            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyCO9kJVn5gidnOdrmLf8g5F6zPdDZ-4DTQ&v=3.exp&libraries=geometry,drawing,places`}
+                            googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${MAPS_KEY}&v=3.exp&libraries=geometry,drawing,places`}
                             loadingElement={<div style={{ height: "100%" }} />}
                             containerElement={<div style={{ height: "100%" }} />}
                             mapElement={<div style={{ height: "100%" }} />}
